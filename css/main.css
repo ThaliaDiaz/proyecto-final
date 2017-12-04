@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow: auto;
+}
+
+/*Estilo de header */
+figure.logo {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+} 
+
+header {
+  position: fixed;
+}
+
+div.container-logo{
+  width: 100%;
+  background-color: #fff;
+}
+
+header #logo {
+  margin: 0 auto;
+  width: 250px;
+}
+
+/*Estilo de Select */
+
+.selection {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 30px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+
+option {
+  color: rgb(167, 164, 164);
+  background: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+select:optional {
+  background-color: #ffc107; 
+  color: #fff;
+}
+
+/*Estilo del usuario */
+section.user {
+  top: 90px;
+  position: fixed;
+  float: left;
+  width: 20%;
+  /*outline: 1px solid red; */
+  /* font-family: sans-serif; */
+  /*border: 2px solid #ffc107; */
+  background-color: #f7b617;
+}
+
+div.user-name {
+  text-align: center;
+}
+
+section.user img {
+  border: 3px solid #fff;
+  width: 40%;
+  height: 40%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+hr {
+  margin: auto;
+  margin-top: 10px;
+  height: 2px;
+  width: 70%;
+  background-color: #fff;
+  border: #fff;
+
+}
+section.user h4.task{
+  display: block;
+}
+
+section.user h3.name {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+section.user h4 {
+  display: inline-block;
+}
+
+div.home {
+  border-bottom: 1px solid #fff; 
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+div.tables, div.calendar {
+  border-bottom: 1px solid #fff; 
+  padding: 20px 0px;
+  padding-bottom: 10px;
+}
+
+div.out {
+  padding: 20px 0px;
+}
+
+.home h4, .tables h4, .calendar h4, .out h4 {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+section.user i {
+  margin-left: 30px;
+}
+
+div.home:hover, div.tables:hover, div.calendar:hover, div.out:hover {
+  /*background-color: #ffc107; 
+  color: #fff; */
+  background-color: #fff;
+  color: #f7b617;
+}
+
+
+
+
+/* Contenido overview */
+.content-sede {
+  padding-top: 200px;
+  background-color: #f7f7f7;
+  margin-left: 20%;
+}
+
+.content-header {
+  position: fixed;
+  background-color: #e1e1e1;
+  float: right;
+  margin-left: 20%;
+  width: 80%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row {
+  margin: 0 -10px;
+}
+
+.container::after, .container::before, .row::before, .row::after {
+  display: table;
+  content: '';
+}
+
+.container::after, .row::after {
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding: 0 10px;
+  width: 50%;
+  /* width: 50%; */
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.box {
+  background-color: #fff;
+  min-height: 250px; 
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+
+#students-deserted {
+  color: red;
+}
+
+.cajita {
+  background-color: #e1e1e1;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 23px;
+  margin-left: 40px;
+  height: 130px;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+}
+
+.box:hover {
+  background-color: #ffc107;
+}
+
+
+.description {
+  color: #939393;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+
+.section {
+  display: inline-block;
+  background-color: #fff;
+  margin: 50px 0;
+  overflow: auto; 
+  margin-right: 20px;
+  width: 48%;
+}
+
+.section:hover {
+  background-color: #f7b617;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0 0 20px;
+  text-transform: uppercase;
+}
+h2 {
+  border-bottom: 2px solid #f7b617;
+  width: 200px;
+}
+
+.box-tabs {
+  margin-left: 30px;
+  font-weight: bold;
+  overflow: auto;
+  text-transform: uppercase;
+  
+}
+
+.tab {
+  font-size: 22px;
+  float: left;
+  cursor: pointer;
+  margin-right: 50px;
+  height: 48px;
+  padding-top: 14px;
+  text-align: center;
+  width: 100px;
+}
+
+.tab.active {
+  border-bottom: 4px solid #f7b617;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
